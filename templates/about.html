@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="icon" type="image/x-icon" href="../static/favicon.ico">
+    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='./styles.css')}}">
+    
+  <style>
+    img{
+      pointer-events: none;
+    }
+    div{
+      user-select: none;
+    }
+    .tje{
+      border: none;
+      background: none;
+    }
+  </style>
+
+</head>
+<body>
+
+    <div class="container text-light text-center bg-dark p-2 rounded-top mt-1 fs-1" id="box1">Victors crazy music</div>
+
+
+    <ul class="nav nav-tabs container bg-dark" style="border-top: 2px solid blue;" >  <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">   
+          <a class="nav-link" href="/music">Music</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/about">About</a>
+        </li>
+        <li class="nav-item ms-lg-auto ms-sm-2" >
+          <a class="nav-link">Disabled</a>
+        </li>
+      </ul>
+
+      <div class="container text-center mt-2">
+        <div class="row align-items-start">
+          <div class="col-8">
+            <button class="tje" onclick="knaps()"><img id="larsbillede" src="../static/lars.png"  alt=""></button>
+            
+          </div>
+          <div class="col">
+            <div class="bg-dark text-white rounded-2 fs-1 mt-1 køb" onclick="u1()" style="height: 100px;">Din Mor
+            <p id="dinMor" class="fs-3">pris: 50 giver: 1</p></div>
+            <div class="bg-dark text-white rounded-2 fs-1 mt-1 køb" onclick="u2()" style="height: 100px;">Din Far
+            <p id="dinFar" class="fs-3">pris: 500 giver: 10</p></div>
+            <div class="bg-dark text-white rounded-2 fs-1 mt-1 køb" onclick="u3()" style="height: 100px;">Lars Mælk
+            <p id="larsMælk" class="fs-3">pris: 5.000 giver: 100</p></div>
+          </div>
+        </div>
+      </div>
+      
+      <script src="../static/script.js"></script>
+      <script src="{{url_for('static', filename='script.js')}}"></script>
+    <!-- <form action="POST">
+        <input class="" type="file" id="image-input" accept="image/jpeg, image/png, image/jpg">
+        <input type="submit">
+    </form> -->
+
+    <!-- <button type="button" class="btn btn-primary">Primary</button> -->
+
+    
+
+
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
